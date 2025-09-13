@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Music</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="judul">My girlfriend</h1>
+  <div class="container">
+    <!-- Foto berbentuk love (jadi tombol musik) -->
+    <div class="love-photo" id="loveBtn">
+      <img src="azelrawr.jpg" alt="Foto Love">
+    </div>
+
+    <!-- Lirik lagu -->
+    <div class="lyrics">
+      <p>
+        화신김독자는가장사랑하는사람의의해죽게될것이다<br>
+        you'll be the one you'll be the one you'll be the one<br>
+        you'll be the one you'll be the one, you'll be the one!<br>
+        I could love you, think that I'm all about what could be.
+      </p>
+    </div>
+    <audio id="musik" loop>
+      <source src="multo.mp4" type="audio/mpeg">
+    </audio>
+    <div class="caption">
+    <h2>hayyy sayanggggg</h2>
+<div class="love-photo">
+  <img src="haymines.jpg" alt="Foto Love 2">
+</div>
+<div class="lyrics">
+  <p>oyyy sayanggg gimanaaa bagusss gakkk webnyaaa akuuu udahh ngerjainnn sendirii looo tapiii dibantuu samaaa chat gpt hehehehee (btwww akuuu ngerjainnn inii penuhh excitedd looo hehehehe)</p>
+</div>
+  <script>
+    const loveBtn = document.getElementById("loveBtn");
+    const musik = document.getElementById("musik");
+    let isPlaying = false;
+
+    loveBtn.addEventListener("click", () => {
+      if (!isPlaying) {
+        musik.play();
+        isPlaying = true;
+        loveBtn.classList.add("active"); // kasih efek kalau lagi play
+      } else {
+        musik.pause();
+        isPlaying = false;
+        loveBtn.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("pinkbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, Sans-Serif;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+}
+.love-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  clip-path: polygon(
+  50% 0%,
+  61% 12%,
+  75% 12%,
+  88% 25%,
+  88% 50%,
+  50% 100%,
+  12% 50%,
+  12% 25%,
+  25% 12%,
+  39% 12%,
+  );
+  border: 5px solid white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+.lyrics {
+  margin: 20px auto;
+  padding: 15px;
+  width: 80%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(255,255,255, 0.3);
+  border-radius: 15px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+audio {
+  margin-top: 20px;
+}
+.judul {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 48px;
+  color: pink;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 20px;
+}
+.caption {
+  margin-top: 20px;
+  color:  white;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black;
+}
